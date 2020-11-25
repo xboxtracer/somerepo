@@ -1,3 +1,5 @@
+SOMEREPO [![Build status](https://ci.appveyor.com/api/projects/status/ny70w71rwklmte1v?svg=true)](https://ci.appveyor.com/project/xboxtracer/somerepo)
+
 **Важно**: все задачи к данной лекции можно выполнить в виде одного репозитория (т.е. допускается не делать отдельные репозитории на каждую задачу).
 
 ---
