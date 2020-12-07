@@ -1,4 +1,3 @@
-
 const cardNumber = [
     {
         cardName: 'VISA',
@@ -79,15 +78,7 @@ const cardNumber = [
             4508541247558572,
             4026502036519913
         ]
-    },
-    {
-        cardName: 'InstaPayment',
-        cardNumbers: [
-            6399953660059805,
-            6376935469148514,
-            6385155275510786
-        ]
-    },
+    }
 ]
 
 export {cardNumber}

@@ -1,11 +1,11 @@
-import americanExpress from '../img/american_express.png';
-import dinercClub from '../img/diners_club.png';
-import discover from '../img/discover.png';
+import americanExpress from '../img/ame.png';
+import dinercClub from '../img/din.png';
+import discover from '../img/dis.png';
 import jcb from '../img/jcb.png';
-import maestro from '../img/maestro.png';
-import mastercard from '../img/mastercard.png';
+import maestro from '../img/mae.png';
+import mastercard from '../img/mas.png';
 import mir from '../img/mir.png';
-import visa from '../img/visa.png';
+import visa from '../img/vis.png';
 
 const images = []
 
