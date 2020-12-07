@@ -9,6 +9,7 @@ module.exports = {
             './src/css/style.css'
         ],
     },
+    devtool: 'inline-source-map',
     output: {
         path: path.resolve(__dirname, 'dist')
     },
