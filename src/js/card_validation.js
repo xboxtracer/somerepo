@@ -12,17 +12,6 @@ export default class validateCard {
         ]
     };
     luhnNumber(number) {
-        // let len = ccNum.length;
-        // let bit = 1;
-        // let sum = 0;
-        // let val;
-
-        // while (len) {
-        //     val = parseInt(ccNum.charAt(--len), 10);
-        //     sum += (bit ^= 1) ? arr[val] : val;
-        // }
-
-        // return ((sum && sum % 10) === 0);
         number = String(number);
 
         let sum = parseInt(number.charAt(number.length - 1));
@@ -44,14 +33,18 @@ export default class validateCard {
         return sum % 10 === 0;
     }
     paySystem(val) {
+        const wrongCard = document.querySelector('[data-name="wrong"]');
         let validCardNumber = this.luhnNumber(val)
         if (validCardNumber) {
             for (let item of this.regCollection) {
                 if (item.regExp.test(val)) {
+                    wrongCard.classList.add('hidden')
                     return item.resultname
                 }
             }
         } else {
+            document.querySelector('.icon__container .active').classList.remove('active');
+            wrongCard.classList.remove('hidden')
             return false
         };
     };

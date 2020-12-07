@@ -13,8 +13,10 @@ const input = document.querySelector('.input__container input');
 const btn = document.querySelector('.input__container button');
 btn.addEventListener('click', ()=>{
     let res = valid.paySystem(input.value);
-    console.log(res);
+    // console.log(res);
     if(res) {
         checkForNumber.chosen(res + '.png');
+    } else {
+
     };
 });

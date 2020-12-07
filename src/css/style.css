@@ -15,3 +15,9 @@ body {
 .card__icon + .active {
   background-color: rgb(41, 182, 72);
 }
+.wrong {
+  color: red;
+}
+.hidden {
+  display: none;
+}
