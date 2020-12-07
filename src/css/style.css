@@ -2,3 +2,12 @@ body {
   background: #eee;
   text-align: center;
 }
+.icon__container {
+  display: flex;
+  height: 64px;
+  flex-direction: row;
+  justify-content: center;
+}
+.card__icon {
+  width: 64px;
+}
