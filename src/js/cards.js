@@ -80,5 +80,4 @@ const cardNumber = [
         ]
     }
 ]
-
 export {cardNumber}
