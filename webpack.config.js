@@ -13,37 +13,40 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist')
     },
+    devServer: {
+        port: 9000,
+    },
     module: {
         rules: [
-        {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            use: {
-                loader: 'babel-loader',
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                },
             },
-        },
-        {
-            test: /\.html$/,
-            use: [
-                {
-                    loader: 'html-loader',
-                },
-            ],
-        },
-        {
-            test: /\.(png|jpe?g|gif)$/i,
-            use: [
-                {
-                    loader: 'file-loader?name=[name].[ext]',
-                },
-            ],
-        },
-        {
-            test: /\.css$/,
-            use: [
-                MiniCssExtractPlugin.loader, 'css-loader',
-            ],
-        },
+            {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: 'html-loader',
+                    },
+                ],
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader?name=[name].[ext]',
+                    },
+                ],
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader, 'css-loader',
+                ],
+            },
         ],
     },
     plugins: [
